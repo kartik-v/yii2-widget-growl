@@ -12,6 +12,7 @@ use Yii;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\helpers\ArrayHelper;
+use kartik\base\AnimateAsset;
 
 /**
  * Widget that wraps the Bootstrap Growl plugin by remabledesigns.
