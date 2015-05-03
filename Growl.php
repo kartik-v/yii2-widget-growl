@@ -243,7 +243,7 @@ class Growl extends \kartik\base\Widget
     {
         $view = $this->getView();
         if (in_array($this->type, self::$_themes)) {
-            GrowlAsset::register($view)->themes[] = $this->type;
+            GrowlAsset::register($view)->addTheme($this->type);
         } else {
             GrowlAsset::register($view);
         }

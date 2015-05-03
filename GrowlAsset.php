@@ -17,31 +17,28 @@ namespace kartik\growl;
  */
 class GrowlAsset extends \kartik\base\AssetBundle
 {
-    public $themes = [];
-
     /**
      * @inheritdoc
      */
     public function init()
     {
         $this->setSourcePath(__DIR__ . '/assets');
-        $cssList = ['css/kv-bootstrap-notify'];
-        $this->setupAssets('css', $cssList);
+        $this->setupAssets('css', ['css/kv-bootstrap-notify']);
         $this->setupAssets('js', ['js/bootstrap-notify']);
         parent::init();
     }
 
     /**
-     * @inheritdoc
+     * Adds a theme CSS file
+     *
+     * @param string $theme the theme name
+     *
+     * @return kartik\growl\GrowlAsset object instance
      */
-    public function registerAssetFiles($view)
+    public function addTheme($theme)
     {
-        if (!empty($this->themes)) {
-            foreach ($this->themes as $theme) {
-                $ext = YII_DEBUG ? '.css' : '.min.css';
-                $this->css[] = "css/{$theme}{$ext}";
-            }
-        }
-        parent::registerAssetFiles($view);
+        $ext = YII_DEBUG ? '.css' : '.min.css';
+        $this->css[] = "css/{$theme}{$ext}";
+        return $this;
     }
 }
