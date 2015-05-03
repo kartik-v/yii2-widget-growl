@@ -1,6 +1,6 @@
 version 1.1.1
 =============
-**Date:** 30-Apr-2015
+**Date:** 03-May-2015
 
 - enh #4: Upgrade extension to use latest release & features of bootstrap-notify plugin.
 
