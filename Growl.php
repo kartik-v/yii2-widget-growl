@@ -145,7 +145,7 @@ class Growl extends \kartik\base\Widget
      /**
      * @var array the first part of growl plugin settings/options 
      */
-    private $_settings;    
+    protected $_settings;    
 
     /**
      * Initializes the widget
