@@ -1,9 +1,9 @@
 <?php
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2018
  * @package yii2-widgets
  * @subpackage yii2-widget-growl
- * @version 1.1.1
+ * @version 1.1.2
  */
 
 namespace kartik\growl;
@@ -13,6 +13,7 @@ use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\helpers\ArrayHelper;
 use kartik\base\AnimateAsset;
+use kartik\base\Widget;
 
 /**
  * Widget that wraps the Bootstrap Growl plugin by remabledesigns.
@@ -22,7 +23,7 @@ use kartik\base\AnimateAsset;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class Growl extends \kartik\base\Widget
+class Growl extends Widget
 {
     const TYPE_INFO = 'info';
     const TYPE_DANGER = 'danger';

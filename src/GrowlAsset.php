@@ -1,21 +1,23 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2018
  * @package yii2-widgets
  * @subpackage yii2-widget-growl
- * @version 1.1.1
+ * @version 1.1.2
  */
 
 namespace kartik\growl;
 
+use kartik\base\AssetBundle;
+
 /**
- * Asset bundle for \kartik\widgets\Growl
+ * Asset bundle for [[Growl]] widget
  *
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class GrowlAsset extends \kartik\base\AssetBundle
+class GrowlAsset extends AssetBundle
 {
     /**
      * @inheritdoc
