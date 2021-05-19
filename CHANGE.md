@@ -3,8 +3,9 @@ Change Log: `yii2-widget-alert`
 
 ## Version 1.1.2
 
-**Date:** 09-Oct-2018
+**Date:** 19-May-2021
 
+- (enh #6): Change `Growl::$_settings` var from private to protected.
 - Enhancements to support both Bootstrap 4.x & 3.x.
 - Move all source code to `src` directory.
 

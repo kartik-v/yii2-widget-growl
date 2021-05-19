@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2018
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2021
  * @package yii2-widgets
  * @subpackage yii2-widget-growl
  * @version 1.1.2
@@ -146,7 +146,7 @@ class Growl extends Widget
      /**
      * @var array the first part of growl plugin settings/options 
      */
-    private $_settings;    
+    protected $_settings;    
 
     /**
      * Initializes the widget
