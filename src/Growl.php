@@ -3,7 +3,7 @@
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2021
  * @package yii2-widgets
  * @subpackage yii2-widget-growl
- * @version 1.1.2
+ * @version 1.1.3
  */
 
 namespace kartik\growl;
@@ -226,7 +226,7 @@ class Growl extends Widget
             $tag = ArrayHelper::remove($this->closeButton, 'tag', 'button');
             $label = ArrayHelper::remove($this->closeButton, 'label', '&times;');
             $label = '<span aria-hidden="true">' . $label . '</span>';
-            Html::addCssClass($this->closeButton, 'close');
+            Html::addCssClass($this->closeButton, 'growl-close');
             if ($tag === 'button' && !isset($this->closeButton['type'])) {
                 $this->closeButton['type'] = 'button';
             }

@@ -4,7 +4,7 @@
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2021
  * @package yii2-widgets
  * @subpackage yii2-widget-growl
- * @version 1.1.2
+ * @version 1.1.3
  */
 
 namespace kartik\growl;
